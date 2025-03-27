@@ -7,8 +7,3 @@ dvc[s3]
 pytest
 scikit-learn
 joblib
-pathlib
-dask
-scikit-learn
-dagshub
-mlflow
