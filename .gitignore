@@ -79,6 +79,9 @@ target/
 # exclude data from source control by default
 /data/
 
+# But allow plot_data.csv
+!data/external/plot_data.csv
+
 # Mac OS-specific storage files
 .DS_Store
 
