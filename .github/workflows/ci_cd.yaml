@@ -89,9 +89,9 @@ jobs:
             aws configure set aws_access_key_id ${{ secrets.AWS_ACCESS_KEY_ID }}
             aws configure set aws_secret_access_key ${{ secrets.AWS_SECRET_ACCESS_KEY }}
             aws deploy create-deployment \
-            --application-name uber-code \
+            --application-name uber-codedeply-app \
             --deployment-config-name CodeDeployDefault.OneAtATime \
-            --deployment-group-name uber-demand-pre-deply-group \
-            --s3-location bucket=uber-demand-pred-remote,key=deployment.zip,bundleType=zip \
+            --deployment-group-name uber-deployment-group \
+            --s3-location bucket=uber-demandpredictiondeployment,key=deployment.zip,bundleType=zip \
             --file-exists-behavior OVERWRITE \
             --region us-east-1
